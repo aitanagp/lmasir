@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginador</title>
+</head>
+<body>
+    <script>
+        const maxpag = 9;
+        var enlaces = '';
+
+        for(var j=1;i<=maxpag;j++){
+            document.write('<a href=#>' + j + '</a>');
+        }
+
+        for (var i = 1; i <= maxpag; i++) {
+            enlaces += '<a href="pag' + i + '.html">' + i + '</a>';
+        }
+        document.write(enlaces);
+    </script>
+</body>
+</html>

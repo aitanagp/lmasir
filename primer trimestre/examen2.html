@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="f1" method="POST" action="http://20.124.246.203/procesar.php">
+    <label for="nom">Nombre</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" cols="30" maxlength="20" required>
+    <br><br>
+    <label name="provincia">Provincia</label>
+    <select name="provincia" id="provincia">
+        <option value="s">-Seleccione-</option>
+        <option value="a">Alicante</option>
+        <option value="c">Castellón</option>
+        <option value="v">Valencia</option>
+    </select>
+    <br><br>
+    <label name="conf">Recuadro de confirmación</label>
+    <input type="checkbox" name="conf" id="checked">
+    <br><br>
+    <label name="comentarios">Comentarios</label>
+    <textarea name="comentarios" id="comentarios" cols="30" rows="1"> </textarea>
+    <br><br>
+
+    <fieldset>
+        <legend>Mayoría de edad</legend>
+        <label name="mayor">Mayor</label>
+        <input type="radio" name="e" value="op" id="may">
+        <br>
+        <label name="menor">Menor</label>
+        <input type="radio" name="e" value="op" id="men">
+    </fieldset>
+    <br><br>
+    <label name="email">email</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <label name="edad">Edad</label>
+    <input type="number" name="edad" id="edad" max="65" min="18" maxlength="2">
+    <br><br>
+    <label for="lenguaje">Lenguaje Favorito</label>
+    <input type="text" list="len" name="lenguaje" id="lenguaje">
+    <datalist id="len">
+      <option>JavaScript</option>
+      <option>Python</option>
+    </datalist> 
+    <br><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+</body>
+</html>

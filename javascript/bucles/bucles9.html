@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var m = 2;
+        var band = true;
+
+        var numero = parseInt(prompt("Por favor ingrese un número:"));
+
+        while (band && m < numero) {
+            if (numero % m == 0) {
+                band = false;
+            } else {
+                m = m + 1;
+            }
+        }
+
+        document.write("Entrada: " + numero + "<br>");
+
+        if (band) {
+            document.write("El número SI es primo.");
+        } else {
+            document.write("El número NO es primo.");
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="recogida.php" method="get">
+        <label for="gustos">
+        Escribe en qué te gusta pasar tu tiempo de ocio
+        </label>
+        <input type="text" id="gustos" name="gustos"
+        list="listaGustos" >
+        <datalist id="listaGustos">
+        <option label="deportes" value="Deportes" >
+        <option label="teatro" value="Teatro">
+        <option label="cine" value="Cine">
+        <option label="leer" value="Leer">
+        <option label="estar loca" value="Estar loca">
+        </datalist>
+        <input type="submit" value="enviar"><br>
+        </form>
+</body>
+</html>

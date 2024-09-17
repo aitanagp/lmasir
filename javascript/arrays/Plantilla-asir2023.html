@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Plantilla asir</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script>
+  function calcularIVA()  {
+      // inicio de la funcion calcularIVA
+      var precio, resultado;
+
+      precio = Number(document.getElementById("precio").value); 
+      // Obtenemos el valor escrito en el formulario en la caja de texto llamada precio y convertimos a numero
+     
+      resultado = precio ;  // calculamos la solución del problema
+
+      document.getElementById("resultado").innerHTML = resultado + " con IVA incluido";  // aquí se muestra el resultado en el <p> correspondiente
+
+      // fin de la funcion
+    }
+</script>
+</head>
+<body>
+
+<h1 class="jumbotron text-center" >
+  EJemplo: Sumar el 21% de IVA a una cantidad</h1>
+<form class="form-inline" role="form">
+  
+  <div class="form-group m-2 p-2">
+    <label for="precio">Precio </label> 
+    <input type="text" class="form-control m-2" id="precio" required>
+  </div>
+
+  <button type="button" class="btn btn-primary"  onclick="calcularIVA()">Calcular</button>
+</form>
+
+<p id="resultado" class="alert alert-success">Visualizar aquí el nombre del producto y su precio con IVA</p>
+<hr>
+<h5>Ejercicio: Analizar el código y añadir un campo de texto nuevo llamado Nombre producto y visualizar el nombre del producto y su precio con IVA(20%) con dos decimales al pulsar el botón Calcular</h5>
+
+</body>
+</html>

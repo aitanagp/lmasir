@@ -1,0 +1,9 @@
+     <a href="subdir/direct/textual.html">texto enlace</a>
+     <a href="llista.html">texto enlace</a>
+     <a href="../subdir/llista.html">texto enlace</a>
+     <a href="../../prova/prova.html">texto enlace</a>
+     <a href="../subdir/docu.html">texto enlace</a>
+     <a href=".. /arrel.html">texto enlace</a>
+     <a href="../subdir">texto enlace</a>
+     <a href="../prova">texto enlace</a>
+     <a href=".. /prova/prova.html">texto enlace</a>

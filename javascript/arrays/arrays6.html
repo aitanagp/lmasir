@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Plantilla asir</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script>
+    function mostrarTablaMultiplicar() {
+      var numero = parseInt(document.getElementById("numero").value);
+      var tabla = "";
+
+      for (var i = 1; i <= 10; i++) {
+        tabla += numero + " x " + i + " = " + numero * i + "<br>";
+      }
+
+      document.getElementById("tablaMultiplicar").innerHTML = tabla;
+    }
+  </script>
+</head>
+<body>
+  <h1 class="jumbotron text-center">
+    Ejemplo: Mostrar tabla de multiplicar</h1>
+  <form class="form-inline" role="form">
+    <div class="form-group m-2 p-2">
+      <label for="numero">Número</label>
+      <input type="text" class="form-control m-2" id="numero" required>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="mostrarTablaMultiplicar()">Mostrar Tabla</button>
+  </form>
+  <p id="tablaMultiplicar" class="alert alert-success">Aquí se mostrará la tabla de multiplicar</p>
+  <hr>
+  <h5>Ejercicio: Analizar el código y añadir un campo de texto nuevo llamado Nombre producto y visualizar el nombre del producto y su precio con IVA(20%) con dos decimales al pulsar el botón Calcular</h5>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var origen = [1, 5, 10, 32, 33, 91, 34, 56, 76, 88, 86];
+        var destino = [];
+
+        for(var i = 0;i <= origin.length;i++){
+            if(origen[i] % 2 != 0){
+                destino.push(origen[i]);
+            } 
+        }
+        document.write("Números origen: " + origen + "<br>");
+        document.write("Números destino: " + destino);
+
+
+    </script>
+</body>
+</html>

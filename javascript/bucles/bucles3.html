@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var salida = '';
+        var estrella = '';
+
+        for(var i=0;i<5;i++){
+            var random;
+            var repetido;
+
+            do{
+                random = getRndInteger(1,50);
+                repetido = salida.includes(random);
+            }while(repetido);
+
+            salida += random;
+
+            if(i<4){
+                salida += '-';
+            }
+        }
+
+        for(var j=0;j<2;j++){
+            var estrellaRand = getRndInteger(1, 12);
+
+            do{
+                estrellaRand = getRndInteger(1, 12);
+                repetido = salida.includes(estrellaRand);
+            }while(repetido);
+
+            estrella += estrellaRand;
+
+            if(j<1){
+                estrella += '-';
+            }
+        }
+        
+        document.write("Salida: " + salida + " ");
+        document.write("Estrellas: " + estrella);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+
+
+/* Table Styles*/
+table.schedule {
+	border-collapse: collapse;
+	background: plum;
+	border: 10px outset rgb(153, 0, 153);
+	font-size: 0.75em;
+	width: 100%;
+	}
+ 
+ /*Table cell Styles*/
+	table.schedule th, table.schedule td {
+	   border: 1px solid gray;
+	   
+	   }
+ 
+
+/* Table Caption Styles */
+
+table.schedule caption {
+	caption-side: bottom;
+	text-align: right;
+}
+
+/* Row Group Styles */
+
+table.schedule thead {
+	background: rgb(153, 0, 153);
+	color: white;
+}
+
+table.schedule thead tr {
+	height: 30px;
+}
+
+table.schedule tfoot {
+	background: black;
+	color: white;
+}
+
+table.schedule tbody tr {
+	height: 40px;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+	background: rgb(218, 210, 218);
+	width: 16%;
+}
+
+col.dayCols {
+	background: rgb(255, 220, 255);
+	width: 12%;
+}
+

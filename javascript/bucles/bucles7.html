@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 1;
+        var cantidad = 0;
+
+        var n = parseInt(prompt("Introducir número de tornillos:"));
+
+        while (x <= n) {
+            var largo = parseFloat(prompt("Introducir largo del tornillo:"));
+
+            if (largo >= 1.2 && largo <= 1.3) {
+                cantidad = cantidad + 1;
+        }
+
+        x = x + 1;
+        }
+
+        document.write("El número de tornillos válidos es " + cantidad);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function faseA() {
+      var decision = prompt("Elige piedra, papel o tijeras:");
+      return decision.toLowerCase();
+    }
+
+    function faseB() {
+      var opciones = ["piedra", "papel", "tijeras"];
+      var indice = Math.floor(Math.random() * 3);
+      return opciones[indice];
+    }
+
+    function comparar(usuario, ordenador) {
+      if (usuario === ordenador) {
+        return "Empate. Ambos eligieron " + usuario + ".";
+      } else if (
+        (usuario === "piedra" && ordenador === "tijeras") ||
+        (usuario === "tijeras" && ordenador === "papel") ||
+        (usuario === "papel" && ordenador === "piedra")
+      ) {
+        return "HAS GANADO! " + usuario + " vence a " + ordenador + ".";
+      } else {
+        return "Perdiste. " + ordenador + " vence a " + usuario + ".";
+      }
+    }
+
+    var usuario = faseA();
+    var ordenador = faseB();
+    var ganador = comparar(usuario, ordenador);
+
+    document.write("Usuario eligió: " + usuario + "<br>");
+    document.write("Ordenador eligió: " + ordenador + "<br>");
+    document.write(ganador);
+
+  </script>
+</body>
+</html>

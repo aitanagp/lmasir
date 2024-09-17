@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Rellena tu CV</title>
+    <form action="control_form.php" method="get">
+        <fieldset >
+        <legend>Datos personales</legend>
+        <form action="servicio.php" method="get">
+            <label for="provincia" id="provincia">
+            Provincia
+            </label><br>
+            <select name="provincia">
+              <option value="al">Alicante</option>
+              <option value="va">Valencia</option>
+              <option value="ca">Castellón</option>
+              </select>
+            </form>
+            <br><br><br>
+
+
+            <lengend>Fecha nacimiento</lengend>
+            <br>
+            <form action="control_form.php" method="get">
+            <input name="dia" id="dia" size="2" maxlength="2">
+            de
+            <form action="servicio.php" method="get">
+            <label for="mes" id="mes">
+
+            </label>
+            <select name="mes">
+                <option value="0" selected="selected">selecciona</option>
+                <option velue="1">enero</option>
+                <option velue=2>febrero</option>
+                <option velue="3">marzo</option>
+                <option velue="4">abril</option>
+                <option velue="5">mayo</option>
+                <option velue="6">junio</option>
+                <option velue="7">julio</option>
+                <option velue="8">agosto</option>
+                <option velue="9">septiembre</option>
+                <option velue="10">octubre</option>
+                <option velue="11">noviembre</option>
+                <option velue="12">diciembre</option>
+            </select>
+            de
+            <input name="año" id="año" size="4" maxlength="4">
+            <br>
+            <legend>temas de interes</legend> <br>
+            <select id="t" name="t" size="5" multiple="multiple">
+            <option value="0" selected="selected">selecciona</option>
+            <option value="1">Analisis y programación</option>
+            <option value="2">Arquitectura</option>
+            <option value="3">ERP</option>
+            <option value="4">Administración bases de datos</option>
+            <option value="5">calidad</option>
+            <option value="5">CRM</option>
+        </select>
+    </fieldset>
+    <input type="submit" value="Enviar" >
+    </form>
+</body>
+</html>

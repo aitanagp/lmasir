@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var notas=[1, 4,10,32, 23, 12];
+
+        for(var i=0;i<notas.length;i++){
+            document.write(notas[i]);
+            if(i<notas.length-1){
+                document.write("-");
+            }
+        }
+
+        document.write("<br>");
+        
+        document.write(notas);
+
+        document.write("<br>");
+        var media = 0;
+
+        for(var i=0;i<notas.length;i++){
+            media = media + notas[i];
+        }
+
+        var total=media/notas.length;
+        document.write("Media de notas: " + total);
+    </script>
+</body>
+</html>

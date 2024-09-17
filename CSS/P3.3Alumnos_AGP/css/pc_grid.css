@@ -1,0 +1,50 @@
+/**/
+
+/*Grid Styles for page body*/
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*Grid Styles for Nested Grid */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section > h1 {
+    grid-area: 1/1/2/3;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header header"
+                         "intro faq"
+                         "articles faq"
+                         "footer footer";
+    grid-column-gap: 15px;
+
+}
+
+body > header {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > footer {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+body > header { grid-area: header;}
+
+article:first-of-type {
+    grid-area: 2/1/2/3;
+    }
+    article:nth-of-type(2) {
+    grid-area:3/1/4/3;
+    }
+
+}

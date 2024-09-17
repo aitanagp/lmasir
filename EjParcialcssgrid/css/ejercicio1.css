@@ -1,0 +1,86 @@
+/*AITANA GARCÍA PÉREZ
+
+las ordenes mas importantes en el caso de grid seria grid-template-columns y grid-template-rows al igual que display: grid;
+otra cosa importante que necesitaremos para que el diseño de la página se vea correctamente es colocar en el footer clear:both; y para evitar tener márgenes en la página y que se vea todo correctameenta
+colocaremos. 
+lo que diferencia a grid de flex, es que con grid creamos columnas y filas, y ordenamos las cosas por columnas y filas. mientras que con flex somos nosotros los que vemos la disposición del texto sin tener 
+columnas o filas. desplzariamos con flex: left; o flex: right;... tenemos float para elementos como ímagenes de forma que se ajustan mejor al texto para que se vea mejor. tambien podemos desplazar elementos
+con flex a la distancia que queramos.
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#lm {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 150px 1fr 1fr 100px;
+    text-align: center;
+}
+
+.publicidad {
+    background-color: red;
+    opacity: 40%;
+}
+
+@media screen {
+    header {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        text-align: center;
+        padding-top: 20px;
+    }
+    nav {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        text-align: left;
+    }
+    nav div {
+        padding: 10px;
+    }
+    main {
+        grid-column: 2/4;
+        text-align: center;
+        border-style: solid;
+        border-radius: 10px;
+        padding-top: 10px;
+        margin: 20px;
+    }
+    main article {
+        grid-row: 3/4;
+        grid-column: 2/5;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    footer {
+        grid-column: 1/5;
+        grid-row: 4/5;
+        clear: both;
+        display: contents;
+    }
+    footer address {
+        text-align: left;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .publicidad {
+        text-align: center;
+        position: static;
+        height: 50px;
+        color: white;
+    }
+    article img {
+        width: 80%;
+        height: 70%;
+        border-radius: 20px;
+    }
+    main img {
+        width: 80%;
+        height: 70%;
+        border-radius: 20px;
+    }
+}
